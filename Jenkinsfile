@@ -8,7 +8,7 @@
       }
       stage('Test'){
           steps{
-          shell('mvn clean')
+          shell('mvn deploy')
           }
       }
     }
