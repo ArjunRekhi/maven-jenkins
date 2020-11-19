@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('build'){
               steps{
-              sh 'mvn install'
+              bat 'mvn install'
              }
             }
             
@@ -14,7 +14,7 @@ pipeline{
             }
             stage('deploy'){
               steps{
-              sh 'mvn deploy'
+              bat 'mvn deploy'
              }
             }
         }
