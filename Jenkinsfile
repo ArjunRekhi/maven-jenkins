@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('build'){
               steps{
-              bash 'mvn clean'
+              sh 'mvn clean'
              }
             }
             
@@ -14,7 +14,7 @@ pipeline{
             }
             stage('deploy'){
               steps{
-              bash 'mvn deploy'
+              sh 'mvn deploy'
              }
             }
         }
