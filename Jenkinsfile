@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('build'){
               steps{
-              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/Assignment1/my-app install'
+              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app install'
              }
             }
             
@@ -14,7 +14,7 @@ pipeline{
             }
             stage('deploy'){
               steps{
-              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/Assignment1/my-app deploy'
+              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app deploy'
              }
             }
         }
