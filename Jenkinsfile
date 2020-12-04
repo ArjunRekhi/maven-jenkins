@@ -3,18 +3,18 @@ pipeline{
         stages{
             stage('build'){
               steps{
-              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app install'
+              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app clean'
              }
             }
             
             stage('test'){
               steps{
-              echo 'Test Stage'
+              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app test'
              }
             }
             stage('deploy'){
               steps{
-              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app deploy'
+              bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app install'
              }
             }
         }
