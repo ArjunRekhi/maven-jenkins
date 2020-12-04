@@ -1,7 +1,7 @@
 pipeline{
         agent any
         stages{
-            stage('build'){
+            stage('clean'){
               steps{
               bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app clean'
              }
@@ -12,7 +12,7 @@ pipeline{
               bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app test'
              }
             }
-            stage('deploy'){
+            stage('install'){
               steps{
               bat 'mvn -f C:/Users/ARJUN/.jenkins/workspace/End-Sem/my-app install'
              }
