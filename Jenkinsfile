@@ -3,13 +3,13 @@ pipeline{
         stages{
             stage('clean'){
               steps{
-              sh 'sudo mvn -f my-app clean'
+              sh 'echo "clean"'
              }
             }
             
             stage('install'){
               steps{
-              sh 'sudo mvn -f my-app install'
+              sh 'echo "install"'
              }
             }
         }
